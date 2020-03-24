@@ -13,8 +13,8 @@
     <groupId>cn.haoxiaoyong.oss</groupId>
     <artifactId>oss-spring-boot-parent</artifactId>
     <packaging>pom</packaging>
-    <name>Alibaba OSS Spring Boot :: Parent</name>
-    <description>Alibaba OSS Spring Boot Parent</description>
+    <name>OSS Spring Boot :: Parent</name>
+    <description>OSS Spring Boot Parent</description>
 
     <properties>
         <spring-boot.version>2.1.4.RELEASE</spring-boot.version>

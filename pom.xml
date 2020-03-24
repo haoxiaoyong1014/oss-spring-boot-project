@@ -113,8 +113,7 @@
     </licenses>
     <scm>
         <connection>scm:git:https://github.com/haoxiaoyong1014/oss-spring-boot-project.git</connection>
-        <developerConnection>scm:git:https://github.com/haoxiaoyong1014/oss-spring-boot-project.git
-        </developerConnection>
+        <developerConnection>scm:git:https://github.com/haoxiaoyong1014/oss-spring-boot-project.git</developerConnection>
         <url>https://github.com/haoxiaoyong1014/oss-spring-boot-project</url>
         <tag>v${project.version}</tag>
     </scm>

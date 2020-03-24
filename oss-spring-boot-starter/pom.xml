@@ -12,9 +12,9 @@
 
     <groupId>cn.haoxiaoyong.oss</groupId>
     <artifactId>oss-spring-boot-starter</artifactId>
-
-    <name>Alibaba OSS Spring Boot :: Parent</name>
-    <description>Alibaba OSS Spring Boot Parent</description>
+    <packaging>jar</packaging>
+    <name>OSS Spring Boot :: Starter</name>
+    <description>OSS Spring Boot Starter</description>
 
 
     <dependencies>

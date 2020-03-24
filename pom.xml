@@ -27,6 +27,10 @@
         </developer>
     </developers>
 
+    <name>OSS Spring Boot Project</name>
+    <description>OSS Spring Boot Project</description>
+    <url>https://github.com/haoxiaoyong1014/oss-spring-boot-project</url>
+
     <modules>
         <module>oss-spring-boot-autoconfigure</module>
         <module>oss-spring-boot-parent</module>
@@ -41,7 +45,7 @@
                 <version>${nexus-staging-maven-plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>ossrh</serverId>
+                    <serverId>oss</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
@@ -108,18 +112,19 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/haoxiaoyong1014/baidu-ocr.git</connection>
-        <developerConnection>scm:git:https://github.com/haoxiaoyong1014/baidu-ocr.git</developerConnection>
-        <url>https://github.com/haoxiaoyong1014/baidu-ocr</url>
+        <connection>scm:git:https://github.com/haoxiaoyong1014/oss-spring-boot-project.git</connection>
+        <developerConnection>scm:git:https://github.com/haoxiaoyong1014/oss-spring-boot-project.git
+        </developerConnection>
+        <url>https://github.com/haoxiaoyong1014/oss-spring-boot-project</url>
         <tag>v${project.version}</tag>
     </scm>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
+            <id>oss</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
+            <id>oss</id>
             <name>Maven Central Staging Repository</name>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>

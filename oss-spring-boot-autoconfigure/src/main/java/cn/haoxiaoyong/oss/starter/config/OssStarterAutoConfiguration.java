@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author haoxiaoyong on 2020/3/23 下午 1:41
+ * @author haoxiaoyong on 2020/3/23  1:41
  * e-mail: hxyHelloWorld@163.com
  * github: https://github.com/haoxiaoyong1014
  * Blog: www.haoxiaoyong.cn

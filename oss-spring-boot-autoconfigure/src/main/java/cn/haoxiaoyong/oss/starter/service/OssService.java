@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.Date;
 
 /**
- * @author haoxiaoyong on 2020/3/23 下午 2:08
+ * @author haoxiaoyong on 2020/3/23 2:08
  * e-mail: hxyHelloWorld@163.com
  * github: https://github.com/haoxiaoyong1014
  * Blog: www.haoxiaoyong.cn
@@ -38,7 +38,6 @@ public class OssService {
                 ossClient.putObject(ossLocalBean.getBucketName(), key, file);
 
                 Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 100);
-                // 生成URL
                 URL url = ossClient.generatePresignedUrl(ossLocalBean.getBucketName(), key, expiration);
                 return ossLocalBean.getProtocol() + url.getHost() + url.getPath();
             } finally {
@@ -49,8 +48,6 @@ public class OssService {
     }
 
     /**
-     * 文件流上传
-     *
      * @param key
      * @param inputStream
      * @return
@@ -60,13 +57,9 @@ public class OssService {
             OSS ossClient = null;
             try {
                 ossClient = getClient();
-
                 ossClient.putObject(ossLocalBean.getBucketName(), key, inputStream);
-                // 设置URL过期时间为100年，默认这里是int型，转换为long型即可
                 Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 100);
-                // 生成URL
                 URL url = ossClient.generatePresignedUrl(ossLocalBean.getBucketName(), key, expiration);
-
                 return ossLocalBean.getProtocol() + url.getHost() + url.getPath();
 
             } finally {
@@ -78,7 +71,6 @@ public class OssService {
     }
 
     /**
-     * 文件下载
      *
      * @param key
      * @return
@@ -90,7 +82,6 @@ public class OssService {
             BufferedReader reader = null;
             try {
                 ossClient = getClient();
-
                 OSSObject ossObject = ossClient.getObject(ossLocalBean.getBucketName(), key);
                 reader = new BufferedReader(new InputStreamReader(ossObject.getObjectContent()));
                 while (true) {
@@ -98,7 +89,6 @@ public class OssService {
                     if (line == null) {
                         break;
                     }
-
                 }
                 reader.close();
                 return reader;
@@ -111,7 +101,6 @@ public class OssService {
     }
 
     /**
-     * 文件下载
      *
      * @param key
      * @param file
@@ -147,7 +136,6 @@ public class OssService {
     }
 
     /**
-     * 文件删除
      *
      * @param key
      */
@@ -166,7 +154,7 @@ public class OssService {
     }
 
     /**
-     * 获取 oss Client
+     * get oss Client
      *
      * @return
      */

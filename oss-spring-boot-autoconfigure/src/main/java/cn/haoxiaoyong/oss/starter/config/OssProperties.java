@@ -3,7 +3,7 @@ package cn.haoxiaoyong.oss.starter.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @author haoxiaoyong on 2020/3/23 下午 1:40
+ * @author haoxiaoyong on 2020/3/23  1:40
  * e-mail: hxyHelloWorld@163.com
  * github: https://github.com/haoxiaoyong1014
  * Blog: www.haoxiaoyong.cn

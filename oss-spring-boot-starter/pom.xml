@@ -6,7 +6,7 @@
         <groupId>cn.haoxiaoyong.oss</groupId>
         <artifactId>oss-spring-boot-parent</artifactId>
         <version>0.0.2-beta</version>
-       <!-- <relativePath>../oss-spring-boot-parent/pom.xml</relativePath>-->
+        <relativePath>../oss-spring-boot-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

@@ -6,6 +6,7 @@
         <artifactId>oss-spring-boot-project</artifactId>
         <groupId>cn.haoxiaoyong.oss</groupId>
         <version>0.0.2-beta</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>

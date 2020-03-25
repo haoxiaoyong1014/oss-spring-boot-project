@@ -7,10 +7,10 @@
     <groupId>cn.haoxiaoyong.oss</groupId>
     <artifactId>oss-spring-boot-project</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
+    <version>0.0.2-beta</version>
 
     <properties>
-        <revision>0.0.1-beta</revision>
+        <revision>0.0.2-beta</revision>
         <java.source.version>1.8</java.source.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>

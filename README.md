@@ -3,11 +3,11 @@
 #### Released version
 
 ```xml
-<dependencies>
+<dependencie>
     <groupId>cn.haoxiaoyong.oss</groupId>
     <artifactId>oss-spring-boot-starter</artifactId>
     <version>0.0.2-beta</version>
-</dependencies>
+</dependencie>
 ```
 #### Quick start
 
